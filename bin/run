@@ -1,0 +1,8 @@
+#!/bin/bash
+
+if [[ "$1" == "remote" ]]
+then
+    zappa invoke
+else
+    python main.py | python -m json.tool
+fi

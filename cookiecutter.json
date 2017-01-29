@@ -1,0 +1,5 @@
+{
+  "project_name": "Zappa Microservice",
+  "project_slug": "{{ cookiecutter.project_name.lower().replace(' ', '_') }}",
+  "project_camelcase": "{{ cookiecutter.project_name.replace(' ', '') }}"
+}
