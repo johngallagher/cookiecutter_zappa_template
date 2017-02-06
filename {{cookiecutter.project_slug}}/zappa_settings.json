@@ -4,6 +4,7 @@
     "keep_warm": false,
     "lambda_handler": "main.run", 
     "project_name": "{{cookiecutter.project_slug}}",
-    "s3_bucket": "zappa-y47xrsmjw"
+    "s3_bucket": "zappa-y47xrsmjw",
+    "timeout_seconds": 300
   }
 }
