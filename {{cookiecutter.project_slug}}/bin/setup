@@ -1,0 +1,16 @@
+#!/bin/bash
+
+brew list pyenv &> /dev/null || brew install pyenv 2> /dev/null
+eval "$(pyenv init -)" >> ~/.bashrc
+source ~/.bashrc
+
+pyenv local 2.7.12 || pyenv install 2.7.12
+pyenv rehash
+
+brew list pyenv-virtualenv &> /dev/null || brew install pyenv-virtualenv 2> /dev/null
+eval "$(pyenv virtualenv-init -)" >> ~/.bashrc
+source ~/.bashrc
+
+pyenv virtualenv {{cookiecutter.project_slug}}
+pyenv local {{cookiecutter.project_slug}}
+pip install -r requirements.txt
