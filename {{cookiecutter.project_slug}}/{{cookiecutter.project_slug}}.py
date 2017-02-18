@@ -1,4 +1,5 @@
+import merge
 
-def run(event, context):
-    return { 'data': [] }
+def run(input, context):
+    return merge.dicts(input, { 'key': 'value' })
 
