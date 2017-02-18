@@ -14,3 +14,9 @@ source ~/.bashrc
 pyenv virtualenv {{cookiecutter.project_slug}}
 pyenv local {{cookiecutter.project_slug}}
 pip install -r requirements.txt
+
+echo "IMPORTANT!"
+echo ""
+echo "If you're using a Google service that needs authenticating...."
+echo ""
+echo "Make sure you copy over the Google credentials file into google_secrets.json locally."
