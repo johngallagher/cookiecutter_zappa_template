@@ -1,5 +1,7 @@
 import unittest
 
+import {{cookiecutter.project_slug}}
+
 class Test{{cookiecutter.project_camelcase}}(unittest.TestCase):
     maxDiff = None
     
