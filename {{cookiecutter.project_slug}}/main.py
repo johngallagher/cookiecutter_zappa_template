@@ -3,7 +3,7 @@ import json
 import merge
 
 def run(event, context):
-    return merge.dicts(event, {{cookiecutter.project_slug}}.run(event, context))
+    return {{cookiecutter.project_slug}}.run(event, context)
 
 if __name__ == '__main__':
     event = {}
